@@ -6,6 +6,7 @@
   <title>Mar Tejedor</title>
 
   <!-- Google Font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -45,7 +46,6 @@ a:hover {
       height: 180px;
       border-radius: 50%;
       object-fit: cover;
-      transform: scale(1.3);
       border: 3px solid #38bdf8;
       box-shadow: 0 0 25px rgba(56,189,248,0.5);
     }
@@ -117,6 +117,49 @@ a:hover {
         text-align: center;
       }
     }
+    .exp-card {
+  background: rgba(255,255,255,0.04);
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border-left: 3px solid #38bdf8;
+  transition: 0.3s;
+}
+
+.exp-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 0 20px rgba(56,189,248,0.2);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.exp-role {
+  color: #f1f5f9;
+}
+
+.exp-date {
+  color: #94a3b8;
+  font-size: 0.9em;
+}
+
+.exp-company {
+  color: #38bdf8;
+  margin: 5px 0 10px 0;
+  font-weight: 500;
+}
+
+.exp-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.exp-card li {
+  margin-bottom: 5px;
+}
   </style>
 </head>
 <body>
@@ -132,9 +175,9 @@ a:hover {
         PhD Student in HPC • Distributed Systems • Quantum Computing
       </p>
       <div class="links">
-        <a href="mailto:martejedor11@gmail.com" target="_blank">Email</a>
-        <a href="https://www.linkedin.com/in/mar-tejedor-ninou-365b47220/" target="_blank">LinkedIn</a>
-        <a href="#" target="_blank">GitHub</a>
+        <a href="mailto:martejedor11@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://www.linkedin.com/in/mar-tejedor-ninou-365b47220/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="#"><i class="fab fa-github"></i> GitHub</a>
       </div>
     </div>
   </header>
@@ -149,24 +192,45 @@ a:hover {
   </section>
 
   <section>
-    <h2>Experience</h2>
+  <h2>Experience</h2>
 
-    <div class="item">
-      <strong>NVIDIA — Multi-GPU Systems Intern (2026)</strong>
-      <p>Optimized GPU communication and analyzed distributed AI workloads.</p>
+  <div class="exp-card">
+    <div class="exp-header">
+      <span class="exp-role">Multi-GPU Systems Intern</span>
+      <span class="exp-date">2026</span>
     </div>
+    <div class="exp-company">NVIDIA</div>
+    <ul>
+      <li>Optimized GPU communication and analyzed distributed AI workloads</li>
+      <li>Studied multi-GPU traffic and scheduling behavior</li>
+    </ul>
+  </div>
 
-    <div class="item">
-      <strong>CERN — Openlab Student (2025)</strong>
-      <p>Developed Kubernetes-based hybrid quantum-HPC execution frameworks.</p>
+  <div class="exp-card">
+    <div class="exp-header">
+      <span class="exp-role">Openlab Student</span>
+      <span class="exp-date">2025</span>
     </div>
+    <div class="exp-company">CERN</div>
+    <ul>
+      <li>Developed Kubernetes-based hybrid quantum-HPC frameworks</li>
+      <li>Integrated GPU and QPU execution pipelines</li>
+    </ul>
+  </div>
 
-    <div class="item">
-      <strong>Barcelona Supercomputing Center — PhD Researcher</strong>
-      <p>Building distributed runtime systems for quantum-classical workflows.</p>
+  <div class="exp-card">
+    <div class="exp-header">
+      <span class="exp-role">PhD Researcher</span>
+      <span class="exp-date">2023 – Present</span>
     </div>
+    <div class="exp-company">Barcelona Supercomputing Center</div>
+    <ul>
+      <li>Building distributed runtime systems for quantum-classical workflows</li>
+      <li>Scaling execution across CPUs, GPUs, and HPC clusters</li>
+    </ul>
+  </div>
 
-  </section>
+</section>
 
   <section>
   <h2>Projects</h2>
