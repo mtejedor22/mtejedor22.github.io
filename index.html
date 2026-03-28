@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mar Tejedor Ninou</title>
+  <title>Mar Tejedor</title>
 
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: radial-gradient(circle at top, #1e293b, #020617);
+      background: linear-gradient(135deg, #0f172a, #1e293b);
       color: #e2e8f0;
     }
 
@@ -24,9 +25,11 @@
     header {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 40px;
       padding: 60px 20px;
       flex-wrap: wrap;
+      animation: fadeIn 1s ease-in;
     }
 
     .profile-img {
@@ -35,38 +38,42 @@
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #38bdf8;
-      box-shadow: 0 0 30px rgba(56,189,248,0.6);
+      box-shadow: 0 0 25px rgba(56,189,248,0.5);
+    }
+
+    .hero-text {
+      max-width: 500px;
     }
 
     h1 {
       margin: 0;
-      font-size: 3em;
+      font-size: 2.8em;
     }
 
     .subtitle {
+      margin-top: 10px;
       color: #94a3b8;
-      margin: 10px 0;
     }
 
     .links a {
       margin-right: 15px;
-      color: #38bdf8;
       text-decoration: none;
+      color: #38bdf8;
       font-weight: 500;
     }
 
     section {
       background: rgba(255,255,255,0.03);
-      margin: 25px 0;
+      margin: 20px 0;
       padding: 25px;
       border-radius: 15px;
-      backdrop-filter: blur(12px);
-      transition: 0.3s;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
     }
 
     section:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 25px rgba(56,189,248,0.2);
     }
 
     h2 {
@@ -75,31 +82,12 @@
       padding-bottom: 8px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+    .item {
+      margin-bottom: 15px;
     }
 
-    .card {
-      background: rgba(255,255,255,0.04);
-      padding: 15px;
-      border-radius: 10px;
-    }
-
-    .highlight {
-      border: 1px solid #38bdf8;
-      box-shadow: 0 0 20px rgba(56,189,248,0.3);
-    }
-
-    .tag {
-      display: inline-block;
-      background: #0ea5e9;
-      color: #020617;
-      padding: 4px 8px;
-      border-radius: 6px;
-      font-size: 0.75em;
-      margin-right: 5px;
+    .item strong {
+      color: #f1f5f9;
     }
 
     footer {
@@ -108,10 +96,13 @@
       color: #94a3b8;
     }
 
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
     @media (max-width: 700px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
       header {
         flex-direction: column;
         text-align: center;
@@ -123,16 +114,14 @@
 
 <div class="container">
 
-  <!-- HERO -->
   <header>
-    <img src="Mar_Pic.JPG" class="profile-img">
+    <img src="Mar_Pic.JPEG" alt="Mar Tejedor" class="profile-img">
 
-    <div>
-      <h1>Mar Tejedor Ninou</h1>
+    <div class="hero-text">
+      <h1>Mar Tejedor</h1>
       <p class="subtitle">
-        PhD @ BSC • HPC Systems • Quantum Computing • Distributed AI
+        PhD Student in HPC • Distributed Systems • Quantum Computing
       </p>
-
       <div class="links">
         <a href="mailto:martejedor11@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/mar-tejedor-ninou-365b47220/">LinkedIn</a>
@@ -141,92 +130,76 @@
     </div>
   </header>
 
-  <!-- RESEARCH FOCUS -->
   <section>
-    <h2>Research Focus</h2>
-    <div>
-      <span class="tag">Distributed Runtimes</span>
-      <span class="tag">Multi-GPU Systems</span>
-      <span class="tag">Quantum-Classical Computing</span>
-      <span class="tag">HPC Workflows</span>
-    </div>
+    <h2>About Me</h2>
+    <p>
+      I work at the intersection of high-performance computing and quantum computing,
+      focusing on distributed runtimes and hybrid quantum-classical systems.
+      My research scales emerging architectures across CPUs, GPUs, and QPUs.
+    </p>
   </section>
 
-  <!-- FEATURED PROJECT -->
-  <section class="highlight">
-    <h2>Featured Project — Qdislib</h2>
-    <p>
-      Distributed framework for quantum circuit cutting enabling scalable 
-      hybrid quantum-classical execution across HPC systems.
-    </p>
-    <p>
-      Combines PyCOMPSs, GPU acceleration, and distributed scheduling 
-      to push beyond single-device quantum limitations.
-    </p>
-    <a href="#">→ View Project</a>
-  </section>
-
-  <!-- EXPERIENCE -->
   <section>
     <h2>Experience</h2>
-    <div class="grid">
 
-      <div class="card">
-        <strong>NVIDIA</strong><br>
-        Multi-GPU Systems Intern<br>
-        <small>Optimized communication + AI workloads</small>
-      </div>
-
-      <div class="card">
-        <strong>CERN</strong><br>
-        Openlab Student<br>
-        <small>Hybrid quantum-HPC orchestration</small>
-      </div>
-
-      <div class="card">
-        <strong>BSC</strong><br>
-        PhD Researcher<br>
-        <small>Distributed runtime systems</small>
-      </div>
-
+    <div class="item">
+      <strong>NVIDIA — Multi-GPU Systems Intern (2026)</strong>
+      <p>Optimized GPU communication and analyzed distributed AI workloads.</p>
     </div>
+
+    <div class="item">
+      <strong>CERN — Openlab Student (2025)</strong>
+      <p>Developed Kubernetes-based hybrid quantum-HPC execution frameworks.</p>
+    </div>
+
+    <div class="item">
+      <strong>Barcelona Supercomputing Center — PhD Researcher</strong>
+      <p>Building distributed runtime systems for quantum-classical workflows.</p>
+    </div>
+
   </section>
 
-  <!-- PROJECTS -->
   <section>
     <h2>Projects</h2>
-    <div class="grid">
 
-      <div class="card">
-        <strong>Qdislib</strong>
-        <p>Distributed circuit cutting library for HPC systems.</p>
-      </div>
-
-      <div class="card">
-        <strong>Quantum-HPC Workflows</strong>
-        <p>Kubernetes orchestration across heterogeneous hardware.</p>
-      </div>
-
+    <div class="item">
+      <strong>Qdislib</strong>
+      <p>Distributed quantum circuit cutting library for hybrid HPC systems.</p>
     </div>
+
+    <div class="item">
+      <strong>Quantum-HPC Workflows</strong>
+      <p>Kubernetes orchestration across CPUs, GPUs, and QPUs.</p>
+    </div>
+
   </section>
 
-  <!-- PUBLICATIONS -->
   <section>
     <h2>Publications</h2>
 
-    <div class="card">
-      <strong>Kubernetes-Orchestrated Hybrid Quantum-Classical Workflows</strong><br>
-      <small>arXiv 2026</small>
+    <div class="item">
+      Kubernetes-Orchestrated Hybrid Quantum-Classical Workflows (2026)
     </div>
 
-    <div class="card">
-      <strong>Distributed Quantum Circuit Cutting for Hybrid HPC</strong><br>
-      <small>SC'25 Workshops</small>
+    <div class="item">
+      Distributed Quantum Circuit Cutting for Hybrid HPC (SC'25)
     </div>
 
   </section>
 
-  <!-- FOOTER -->
+  <section>
+    <h2>Awards</h2>
+
+    <div class="item">
+      La Caixa INPhINIT Fellowship (2025)
+    </div>
+
+    <div class="item">
+      ACM SIGHPC Travel Grant (SC'25)
+    </div>
+
+  </section>
+
   <footer>
     © 2026 Mar Tejedor Ninou
   </footer>
