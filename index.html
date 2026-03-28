@@ -1,444 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mar Tejedor Ninou - Quantum HPC Research Engineer</title>
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mar Tejedor Ninou</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .subtitle {
+      color: #555;
+      margin-top: 10px;
+    }
+    .links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0077cc;
+    }
+    section {
+      background: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+    .item {
+      margin-bottom: 15px;
+    }
+    .item strong {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-<header class="header">
-  <nav class="navbar">
-      <div class="logo">Mar Tejedor</div>
-      <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#interests">Interests</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#tech-stack">Tech Stack</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#awards">Awards</a></li>
-          <li><a href="public/CV/Mar_Tejedor_Ninou_CV.pdf" target="_blank">CV</a></li>
-      </ul>
-      <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-      </div>
-  </nav>
-</header>
 
-<main>
-  <section id="home" class="hero-section">
-      <div class="hero-content-wrapper container">
-          <div class="hero-text-content">
-              <h1>Hi, I'm <span class="gradient-text">Mar Tejedor</span></h1>
-              <p class="tagline">PhD Researcher in HPC & Quantum Computing. Building distributed runtimes for heterogeneous architectures at BSC — currently interning at NVIDIA on multi-GPU systems.</p>
-              <div class="hero-buttons">
-                  <a href="mailto:martejedor11@gmail.com" class="btn-hero primary"><i class="fas fa-envelope"></i> Contact Me</a>
-                  <a href="https://www.linkedin.com/in/mar-tejedor-ninou-365b47220/" target="_blank" aria-label="LinkedIn" class="btn-hero secondary"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-          </div>
-          <div class="hero-image-content">
-              <img src="public/images/mar-profile.jpg" alt="Mar Tejedor Ninou" class="profile-pic">
-          </div>
-      </div>
-      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
-          <i class="fas fa-chevron-down"></i>
-      </a>
+<div class="container">
+
+  <header>
+    <h1>Mar Tejedor Ninou</h1>
+    <p class="subtitle">
+      PhD Student in HPC • Quantum Computing • Distributed Systems
+    </p>
+    <div class="links">
+      <a href="mailto:martejedor11@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/mar-tejedor-ninou-365b47220/">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a PhD student working on heterogeneous HPC systems, distributed runtimes,
+      and hybrid quantum-classical computing. My work focuses on scaling across CPUs,
+      GPUs, and QPUs for next-generation computing systems.
+    </p>
   </section>
 
-  <section id="about" class="section about-section">
-      <div class="container">
-          <h2>About Me</h2>
-          <div class="about-content-grid">
-              <div class="about-text-column">
-                  <p>I'm Mar Tejedor Ninou, a PhD researcher at the Technical University of Catalunya (UPC) and the Barcelona Supercomputing Center (BSC), where I work on heterogeneous HPC systems and distributed runtime models for emerging architectures under the supervision of Rosa M. Badia. My research sits at the intersection of high-performance computing and quantum computing.</p>
-                  <p>I hold an MSc in Computer Science from Georgia Tech (Machine Learning & Computing Systems) and an MSc in Quantum Science and Technology from the University of Barcelona. My PhD is supported by the Doctoral INPhINIT Retaining Fellowship from La Caixa Foundation — I was the sole Computer Science/Engineering awardee in Spain in 2025. I am currently doing a research internship at NVIDIA in Zurich, focusing on multi-GPU scheduling and distributed runtime optimization.</p>
-              </div>
-              <div class="about-cards-column">
-                  <div class="about-card">
-                      <i class="fas fa-microchip"></i>
-                      <h3>HPC Systems</h3>
-                      <p>Designing distributed runtimes for heterogeneous computing architectures</p>
-                  </div>
-                  <div class="about-card">
-                      <i class="fas fa-atom"></i>
-                      <h3>Quantum Computing</h3>
-                      <p>Building hybrid quantum-classical systems and circuit cutting algorithms</p>
-                  </div>
-                  <div class="about-card">
-                      <i class="fas fa-brain"></i>
-                      <h3>Machine Learning</h3>
-                      <p>Applying ML techniques to scientific computing and HPC workloads</p>
-                  </div>
-                  <div class="about-card">
-                      <i class="fas fa-globe"></i>
-                      <h3>Open Science</h3>
-                      <p>Contributing to open-source HPC and quantum computing software</p>
-                  </div>
-              </div>
-          </div>
-      </div>
+  <section>
+    <h2>Experience</h2>
+
+    <div class="item">
+      <strong>NVIDIA — Multi-GPU Systems Intern (2026)</strong>
+      Characterized GPU communication patterns and optimized distributed AI workloads.
+    </div>
+
+    <div class="item">
+      <strong>CERN — Openlab Student (2025)</strong>
+      Built Kubernetes-based hybrid quantum-HPC execution frameworks.
+    </div>
+
+    <div class="item">
+      <strong>Barcelona Supercomputing Center — PhD Researcher</strong>
+      Developing distributed runtime systems for quantum-classical workflows.
+    </div>
+
   </section>
 
-  <section id="interests" class="section interests-section">
-      <div class="container">
-          <h2>Interests</h2>
-          <p class="section-description">My research and professional interests span the full stack of high-performance and quantum computing.</p>
-          <div class="interests-grid">
-              <div class="interest-item">
-                  <i class="fas fa-server icon-blue"></i>
-                  <h3>High-Performance Computing</h3>
-                  <p>Designing scalable distributed systems for scientific workloads on supercomputers.</p>
-              </div>
-              <div class="interest-item">
-                  <i class="fas fa-atom icon-purple"></i>
-                  <h3>Quantum Computing</h3>
-                  <p>Developing algorithms and software for hybrid quantum-classical execution.</p>
-              </div>
-              <div class="interest-item">
-                  <i class="fas fa-microchip icon-green"></i>
-                  <h3>Heterogeneous Architectures</h3>
-                  <p>Optimizing workloads across CPU, GPU, and QPU resources.</p>
-              </div>
-              <div class="interest-item">
-                  <i class="fas fa-project-diagram icon-orange"></i>
-                  <h3>Distributed Runtimes</h3>
-                  <p>Building and extending runtime systems like PyCOMPSs for HPC workflows.</p>
-              </div>
-              <div class="interest-item">
-                  <i class="fas fa-brain icon-red"></i>
-                  <h3>Machine Learning</h3>
-                  <p>Applying ML and deep learning to scientific problems and HPC systems.</p>
-              </div>
-              <div class="interest-item">
-                  <i class="fas fa-sitemap icon-lightblue"></i>
-                  <h3>Multi-GPU Scheduling</h3>
-                  <p>Efficient scheduling strategies across multi-GPU distributed architectures.</p>
-              </div>
-              <div class="interest-item">
-                  <i class="fas fa-cut icon-pink"></i>
-                  <h3>Circuit Cutting</h3>
-                  <p>Implementing distributed quantum circuit cutting for near-term quantum devices.</p>
-              </div>
-              <div class="interest-item">
-                  <i class="fas fa-code-branch icon-yellow"></i>
-                  <h3>Open Source</h3>
-                  <p>Contributing to open-source HPC and quantum computing libraries and tools.</p>
-              </div>
-          </div>
-      </div>
+  <section>
+    <h2>Projects</h2>
+
+    <div class="item">
+      <strong>Qdislib</strong>
+      Distributed quantum circuit cutting library for hybrid HPC workflows.
+    </div>
+
+    <div class="item">
+      <strong>Quantum-HPC Workflows</strong>
+      Kubernetes orchestration across CPUs, GPUs, and QPUs.
+    </div>
+
   </section>
 
-  <section id="experience" class="section experience-section">
-      <div class="container">
-          <h2>Education & Experience</h2>
-          <div class="experience-grid">
+  <section>
+    <h2>Publications</h2>
 
-              <div class="experience-card">
-                  <div class="experience-icon-wrapper">
-                      <i class="fas fa-briefcase experience-icon"></i>
-                  </div>
-                  <div class="experience-content">
-                      <h3>PhD Internship – Multi-GPU Systems</h3>
-                      <h4>NVIDIA · Zurich, Switzerland · Jan 2026 – Jul 2026</h4>
-                      <p>Research internship conducted as part of PhD at BSC. Focus on optimizing distributed runtime execution and scheduling across multi-GPU architectures. Collaborating with NVIDIA's HPC and Multi-GPU Computing teams.</p>
-                      <div class="experience-tags">
-                          <span class="tag">Multi-GPU</span>
-                          <span class="tag">Distributed Runtimes</span>
-                          <span class="tag">HPC Scheduling</span>
-                      </div>
-                  </div>
-              </div>
+    <div class="item">
+      Kubernetes-Orchestrated Hybrid Quantum-Classical Workflows (2026)
+    </div>
 
-              <div class="experience-card">
-                  <div class="experience-icon-wrapper">
-                      <i class="fas fa-flask experience-icon"></i>
-                  </div>
-                  <div class="experience-content">
-                      <h3>Openlab Summer Student – IT Department</h3>
-                      <h4>CERN · Geneva, Switzerland · Jun 2025 – Aug 2025</h4>
-                      <p>Prototyped a Kubernetes-based execution framework integrating GPUs and QPUs. Developed extensions for workload orchestration across heterogeneous resources. Benchmarked distributed executions on HPC clusters with GPU and QPU acceleration.</p>
-                      <div class="experience-tags">
-                          <span class="tag">Kubernetes</span>
-                          <span class="tag">GPU/QPU Orchestration</span>
-                          <span class="tag">HPC Benchmarking</span>
-                      </div>
-                  </div>
-              </div>
+    <div class="item">
+      Distributed Quantum Circuit Cutting for Hybrid HPC (SC'25)
+    </div>
 
-              <div class="experience-card">
-                  <div class="experience-icon-wrapper">
-                      <i class="fas fa-atom experience-icon"></i>
-                  </div>
-                  <div class="experience-content">
-                      <h3>Intern – Quantum Information Theory Group</h3>
-                      <h4>ICFO (Institute of Photonic Sciences) · Barcelona, Spain · Dec 2024 – Mar 2025</h4>
-                      <p>Developed numerical models of quantum reservoirs for ML tasks and tested encoding strategies for quantum machine learning applications.</p>
-                      <div class="experience-tags">
-                          <span class="tag">Quantum ML</span>
-                          <span class="tag">Quantum Reservoirs</span>
-                          <span class="tag">Numerical Modeling</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="experience-card">
-                  <div class="experience-icon-wrapper">
-                      <i class="fas fa-briefcase experience-icon"></i>
-                  </div>
-                  <div class="experience-content">
-                      <h3>PhD Student – Workflows and Distributed Computing Group</h3>
-                      <h4>Barcelona Supercomputing Center (BSC) · Barcelona, Spain · Aug 2023 – Present</h4>
-                      <p>Designed HPC workflows with PyCOMPSs distributed runtimes for quantum-classical tasks. Implemented communication-intensive algorithms (circuit cutting) with CPU–GPU scaling. Contributed to open-source library <strong>Qdislib</strong>. Continuing research on heterogeneous runtime models and multi-GPU scheduling.</p>
-                      <div class="experience-tags">
-                          <span class="tag">PyCOMPSs</span>
-                          <span class="tag">Distributed Runtimes</span>
-                          <span class="tag">Circuit Cutting</span>
-                          <span class="tag">CPU–GPU Scaling</span>
-                          <span class="tag">Qdislib</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="experience-card">
-                  <div class="experience-icon-wrapper">
-                      <i class="fas fa-graduation-cap experience-icon"></i>
-                  </div>
-                  <div class="experience-content">
-                      <h3>PhD in Computer Science</h3>
-                      <h4>Technical University of Catalunya (UPC) · Barcelona · Oct 2025 – Present</h4>
-                      <p>Dept. of Computer Architecture. Doctoral INPhINIT Fellowship – La Caixa Foundation. Research: <strong>Heterogeneous HPC Systems and Distributed Runtime Models for Emerging Architectures</strong>. Supervisor: Rosa M. Badia at BSC.</p>
-                      <div class="experience-tags">
-                          <span class="tag">Heterogeneous HPC</span>
-                          <span class="tag">Distributed Runtimes</span>
-                          <span class="tag">La Caixa Fellowship</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="experience-card">
-                  <div class="experience-icon-wrapper">
-                      <i class="fas fa-graduation-cap experience-icon"></i>
-                  </div>
-                  <div class="experience-content">
-                      <h3>MSc in Computer Science</h3>
-                      <h4>Georgia Institute of Technology · Atlanta, GA · Aug 2023 – May 2025</h4>
-                      <p>College of Computing. Specialization: Machine Learning and Computing Systems. Key Courses: HPC Architecture, Parallel Algorithms, ML, Deep Learning.</p>
-                      <div class="experience-tags">
-                          <span class="tag">Machine Learning</span>
-                          <span class="tag">Computing Systems</span>
-                          <span class="tag">HPC Architecture</span>
-                          <span class="tag">Parallel Algorithms</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="experience-card">
-                  <div class="experience-icon-wrapper">
-                      <i class="fas fa-graduation-cap experience-icon"></i>
-                  </div>
-                  <div class="experience-content">
-                      <h3>MSc in Quantum Science and Technology</h3>
-                      <h4>University of Barcelona · Barcelona, Spain · Sept 2024 – Jul 2025</h4>
-                      <p>Dept. of Physics. Specialization: Quantum Computing Software and Algorithms. Supported by the Catalonia Quantum Academy Scholarship (top 10 students).</p>
-                      <div class="experience-tags">
-                          <span class="tag">Quantum Computing</span>
-                          <span class="tag">Quantum Algorithms</span>
-                          <span class="tag">CQA Scholarship</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="experience-card">
-                  <div class="experience-icon-wrapper">
-                      <i class="fas fa-graduation-cap experience-icon"></i>
-                  </div>
-                  <div class="experience-content">
-                      <h3>BSc in Computer Science</h3>
-                      <h4>University of Delaware · Newark, DE · Sept 2020 – May 2023</h4>
-                      <p>Cum Laude, Top 8%. Concentration: Data Science. Minors: Mathematics, Cognitive Science.</p>
-                      <div class="experience-tags">
-                          <span class="tag">Data Science</span>
-                          <span class="tag">Mathematics</span>
-                          <span class="tag">Cognitive Science</span>
-                          <span class="tag">Cum Laude</span>
-                      </div>
-                  </div>
-              </div>
-
-          </div>
-      </div>
   </section>
 
-  <section id="tech-stack" class="section tech-stack-section">
-      <div class="container">
-          <h2>Tech Stack</h2>
-          <p class="section-description">Technologies and tools I work with in my research and engineering practice.</p>
-          <div class="tech-stack-grid">
-              <div class="tech-card">
-                  <i class="fab fa-python tech-icon"></i>
-                  <h3>Python</h3>
-              </div>
-              <div class="tech-card">
-                  <i class="fas fa-code tech-icon"></i>
-                  <h3>C++</h3>
-              </div>
-              <div class="tech-card">
-                  <i class="fas fa-code tech-icon"></i>
-                  <h3>C</h3>
-              </div>
-              <div class="tech-card">
-                  <i class="fab fa-java tech-icon"></i>
-                  <h3>Java</h3>
-              </div>
-              <div class="tech-card">
-                  <i class="fas fa-wave-square tech-icon"></i>
-                  <h3>Julia</h3>
-              </div>
-              <div class="tech-card">
-                  <i class="fas fa-network-wired tech-icon"></i>
-                  <h3>MPI / OpenMP</h3>
-              </div>
-              <div class="tech-card">
-                  <i class="fas fa-server tech-icon"></i>
-                  <h3>PyCOMPSs</h3>
-              </div>
-              <div class="tech-card">
-                  <i class="fas fa-tasks tech-icon"></i>
-                  <h3>Slurm</h3>
-              </div>
-              <div class="tech-card">
-                  <i class="fab fa-docker tech-icon"></i>
-                  <h3>Kubernetes</h3>
-              </div>
-              <div class="tech-card">
-                  <i class="fas fa-microchip tech-icon"></i>
-                  <h3>GPU Computing</h3>
-              </div>
-              <div class="tech-card">
-                  <i class="fas fa-fire tech-icon"></i>
-                  <h3>PyTorch</h3>
-              </div>
-              <div class="tech-card">
-                  <i class="fas fa-brain tech-icon"></i>
-                  <h3>TensorFlow</h3>
-              </div>
-              <div class="tech-card">
-                  <i class="fas fa-robot tech-icon"></i>
-                  <h3>Scikit-learn</h3>
-              </div>
-              <div class="tech-card">
-                  <i class="fas fa-atom tech-icon"></i>
-                  <h3>Quantum SDKs</h3>
-              </div>
-          </div>
-      </div>
+  <section>
+    <h2>Awards</h2>
+
+    <div class="item">
+      La Caixa INPhINIT Fellowship (2025)
+    </div>
+
+    <div class="item">
+      ACM SIGHPC Travel Grant (SC'25)
+    </div>
+
   </section>
 
-  <section id="publications" class="section soft-skills-section">
-      <div class="container">
-          <h2>Publications</h2>
-          <p class="section-description">Peer-reviewed research contributions in HPC and quantum computing.</p>
-          <div class="soft-skills-grid">
-              <div class="soft-skill-card">
-                  <i class="fas fa-file-alt"></i>
-                  <h3>SC'25 Workshops – Supercomputing 2025</h3>
-                  <p><strong>M. Tejedor</strong>, B. Casas, J. Conejero, A. Cervera-Lierta, R. M. Badia.<br>
-                  <em>Distributed Quantum Circuit Cutting for Hybrid Quantum-Classical High-Performance Computing</em>, 2025.</p>
-                  <a href="https://arxiv.org/abs/2505.01184" target="_blank" class="btn-link">arXiv:2505.01184 <i class="fas fa-external-link-alt"></i></a>
-              </div>
-          </div>
-      </div>
-  </section>
+  <footer>
+    © 2026 Mar Tejedor Ninou
+  </footer>
 
-  <section id="projects" class="section projects-section">
-      <div class="container">
-          <h2>Software</h2>
-          <div class="featured-project">
-              <h2>Qdislib</h2>
-              <div class="featured-content">
-                  <div class="featured-text">
-                      <p>Open-source Python library for distributed quantum circuit cutting and hybrid quantum-classical HPC workflows. Designed to enable the execution of large quantum circuits across multiple QPUs by leveraging classical HPC infrastructure.</p>
-                      <p>Integrated with PyCOMPSs distributed runtime and GPU acceleration for scalable performance on supercomputing clusters.</p>
-                      <p class="technologies"><strong>Technologies:</strong> Python, PyCOMPSs, MPI, GPU runtimes, Quantum circuit frameworks</p>
-                      <div class="featured-links">
-                          <a href="https://qdislib.readthedocs.io" target="_blank" class="btn-primary">Documentation <i class="fas fa-external-link-alt"></i></a>
-                      </div>
-                  </div>
-                  <div class="featured-image-placeholder">
-                      <img src="public/images/qdislib.png" alt="Qdislib" class="project-image">
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+</div>
 
-  <section id="awards" class="section experience-section">
-      <div class="container">
-          <h2>Awards & Fellowships</h2>
-          <div class="experience-grid">
-
-              <div class="experience-card">
-                  <div class="experience-icon-wrapper">
-                      <i class="fas fa-award experience-icon"></i>
-                  </div>
-                  <div class="experience-content">
-                      <h3>Doctoral INPhINIT Retaining Fellowship</h3>
-                      <h4>La Caixa Foundation · Spain · Starting Sept 2025</h4>
-                      <p>Prestigious national fellowship with a 3.9% success rate. Sole awardee in Computer Science/Engineering in Spain in 2025.</p>
-                      <div class="experience-tags">
-                          <span class="tag">3.9% Success Rate</span>
-                          <span class="tag">National Recognition</span>
-                          <span class="tag">Sole CS/Eng Awardee 2025</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="experience-card">
-                  <div class="experience-icon-wrapper">
-                      <i class="fas fa-award experience-icon"></i>
-                  </div>
-                  <div class="experience-content">
-                      <h3>Catalonia Quantum Academy Scholarship</h3>
-                      <h4>Spain · Sept 2024 – Jul 2025</h4>
-                      <p>Full-tuition scholarship for the MSc in Quantum Science and Technology. Awarded to the top 10 students in the Catalonia Quantum Academy programme.</p>
-                      <div class="experience-tags">
-                          <span class="tag">Full Tuition</span>
-                          <span class="tag">Top 10 Students</span>
-                      </div>
-                  </div>
-              </div>
-
-          </div>
-      </div>
-  </section>
-
-  <section id="contact" class="section contact-section">
-      <div class="container">
-          <h2>Get in Touch</h2>
-          <p>I'm open to research collaborations, speaking opportunities, and discussions about HPC, quantum computing, or distributed systems.</p>
-          <div class="contact-info">
-              <div class="social-icons">
-                  <a href="mailto:martejedor11@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                  <a href="https://www.linkedin.com/in/mar-tejedor-ninou-365b47220/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-          </div>
-      </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container">
-      <p>&copy; 2025 Mar Tejedor Ninou. All rights reserved.</p>
-  </div>
-</footer>
-
-<button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-
-<script src="script.js"></script>
 </body>
 </html>
